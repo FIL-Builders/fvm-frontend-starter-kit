@@ -8,6 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'sm': '640px',    // Default Tailwind 'sm'
+        'md': '768px',    // Default Tailwind 'md'
+        'lg': '1024px',   // Default Tailwind 'lg'
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
