@@ -17,9 +17,12 @@ import {
   QueryClient,
 } from "@tanstack/react-query";
 //  Chain Configuration
+
+const projectId = `${process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID}`;
+
 const config = getDefaultConfig({
     appName: 'FVM Frontend Starter Kit',
-    projectId: 'cbe6731c370da93a4fe9b2dd9ef77da8', // Replace with your Id
+    projectId: projectId, // Replace with your Id
     chains: [filecoin, filecoinCalibration],
     ssr: true, // If your dApp uses server side rendering (SSR)
   });
