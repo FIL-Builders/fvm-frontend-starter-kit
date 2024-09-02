@@ -24,6 +24,14 @@ const ContractIntegration: React.FC<ContractProps> = ({ account, balance }) => {
         functionName: 'name'
     })
 
+    const decimals  = useReadContract({
+        address: CONTRACT_ADDRESS,
+        abi: CONTRACT_ABI,
+        functionName: 'decimals'
+    })
+
+    console.log(decimals.data)
+
     return (
         <>
             {/* LEFT CARD */}
@@ -37,12 +45,12 @@ const ContractIntegration: React.FC<ContractProps> = ({ account, balance }) => {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col flex-1 cursor-pointer justify-between pb-8 px-6 sm:px-8 space-y-6">
+                <div className="flex flex-col flex-1 cursor-pointer justify-between pb-8 space-y-6">
                     <div className="flex flex-col gap-3 sm:flex-row">
                         <a
                             className="text-black items-center inline-flex bg-white border-2 border-black duration-200 ease-in-out focus:outline-none hover:bg-black hover:shadow-none hover:text-white justify-center rounded-xl shadow-[5px_5px_black] text-center transform transition w-full lg:px-8 lg:py-4 lg:text-4xl px-4 py-2"
                         >
-                            {data?.toString()} {tokenName.data?.toString()}
+                            {(Number(data)/ 10 ** Number(decimals.data))?.toString()} {tokenName.data?.toString()}
                         </a>
                     </div>
                 </div>

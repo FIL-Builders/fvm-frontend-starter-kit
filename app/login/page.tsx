@@ -8,7 +8,7 @@ export default function Login() {
   const router = useRouter()
 
   const handleClick = () => {
-    router.push('/stats');  // Replace with your target route
+    router.push('/defi');  // Replace with your target route
   };
 
   const { openConnectModal } = useConnectModal();

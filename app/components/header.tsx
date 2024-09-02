@@ -33,7 +33,7 @@ const Header = () => {
       </div>
       {openAccountModal && <div className="fixed right-6">
         <div className="flex flex-row gap-8 items-center">
-          <Link href="/stats">
+          <Link href="/defi">
             <div className="text-white font-bold">
               DeFi
             </div>

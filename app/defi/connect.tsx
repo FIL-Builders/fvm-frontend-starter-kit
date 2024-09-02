@@ -2,7 +2,6 @@
 import {
   useConnectModal
 } from '@rainbow-me/rainbowkit';
-import { useBalance } from 'wagmi'
 
 export default function Connect() {
 

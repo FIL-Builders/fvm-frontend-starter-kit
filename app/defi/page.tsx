@@ -9,7 +9,7 @@ import ContractIntegration from "./contractIntegration";
 import { useAccount,useBalance } from 'wagmi'
 
 
-export default function Stats() {
+export default function Defi() {
 
   const { openAccountModal } = useAccountModal();
   const account = useAccount()
