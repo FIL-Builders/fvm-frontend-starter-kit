@@ -1,8 +1,7 @@
 "use client"
 
 import { CONTRACT_ABI, CONTRACT_ADDRESS } from "./contractDetails";
-import { useReadContract, useBalance } from 'wagmi'
-import { type UseBalanceReturnType } from 'wagmi'
+import { useReadContract } from 'wagmi'
 
 interface ContractProps {
     account: `0x${string}`;
