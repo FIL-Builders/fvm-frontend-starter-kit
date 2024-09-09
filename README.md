@@ -9,7 +9,7 @@ First, install the dependencies:
 npm install
 ```
 
-Update the env:
+Update the env: [OPTIONAL]
 You can get the credentials from here : https://cloud.walletconnect.com/sign-in
 
 ```bash
