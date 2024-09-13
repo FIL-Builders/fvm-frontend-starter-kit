@@ -1,8 +1,8 @@
 "use client"
 
 import Image from "next/image";
-import Footer from "../components/footer";
-import Header from "../components/header";
+import Footer from "@components/footer";
+import Header from "@components/header";
 
 export default function Dummy() {
   return (

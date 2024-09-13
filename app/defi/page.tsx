@@ -1,11 +1,11 @@
 "use client"
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Header from "@components/header";
+import Footer from "@components/footer";
 import {
   useAccountModal
 } from '@rainbow-me/rainbowkit';
-import Connect from "./connect";
-import ContractIntegration from "./contractIntegration";
+import Connect from "@components/fil-frame/connect";
+import ContractIntegration from "@components/fil-frame/contractIntegration";
 import { useAccount,useBalance } from 'wagmi'
 
 
